@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add"
+        android:visibility="gone"
+>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/firstName"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="firstname"
+        android:background="@drawable/buttons"
+        android:hint="Firstname"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/lastName"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="firstname"
+        android:background="@drawable/buttons"
+        android:hint="Lastname"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/firstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/date_of_birth"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="firstname"
+        android:background="@drawable/buttons"
+        android:hint="Date of birth (dd mmm yyyy)"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/lastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/address"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="firstname"
+        android:background="@drawable/buttons"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/date_of_birth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/email"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="firstname"
+        android:background="@drawable/buttons"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_user"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/add_user"
+        android:background="#964444"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goto_user_search"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/go_to_user_search"
+        android:background="#964444"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/add_user"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/show_user_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:textSize="21sp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/search"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/firstNames"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="firstname"
+            android:background="@drawable/buttons"
+            android:hint="Firstname"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/lastNames"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="firstname"
+            android:background="@drawable/buttons"
+            android:hint="Lastname"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/firstNames"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/date_of_birth_s"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="firstname"
+            android:background="@drawable/buttons"
+            android:hint="Date of birth (dd mmm yyyy)"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/lastNames"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/address_s"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="firstname"
+            android:background="@drawable/buttons"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/date_of_birth_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_s"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="firstname"
+            android:background="@drawable/buttons"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/address_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_user"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/search_user"
+            android:background="#964444"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goto_add_user"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="70dp"
+            android:text="@string/go_to_add_user"
+            android:background="#964444"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/search_user"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/search_show_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:textSize="21sp"
+            app:layout_constraintTop_toBottomOf="@id/email_s"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
