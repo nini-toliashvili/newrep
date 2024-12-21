@@ -11,6 +11,508 @@
 
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signin"
+        android:visibility="visible"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_start"
+            android:layout_width="220dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/imagestart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/apple_login"
+            app:layout_constraintEnd_toEndOf="@id/apple_login"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="@id/apple_login"
+            app:layout_constraintTop_toTopOf="@id/apple_login"
+            app:layout_constraintVertical_bias="0.6">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/applefilled" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="64dp"
+                android:text="@string/continue_with_apple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/fc_login"
+            app:layout_constraintEnd_toEndOf="@id/fc_login"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="@id/fc_login"
+            app:layout_constraintTop_toTopOf="@id/fc_login"
+            app:layout_constraintVertical_bias="0.575">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/facebook" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="64dp"
+                android:text="@string/continue_with_facebook"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/google_login"
+            app:layout_constraintEnd_toEndOf="@id/google_login"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="@id/google_login"
+            app:layout_constraintTop_toTopOf="@id/google_login"
+            app:layout_constraintVertical_bias="0.525">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/google" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="64dp"
+                android:text="@string/continue_with_google"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google_login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fc_login" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fc_login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_title" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apple_login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/google_login" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/header_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/header"
+            android:text="@string/let_s_you_in"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/image_start" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="145dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="15dp"
+            android:background="#d9d9d9"
+            app:layout_constraintBottom_toTopOf="@id/signin_button"
+            app:layout_constraintEnd_toStartOf="@id/or"
+            app:layout_constraintTop_toBottomOf="@+id/apple_login" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="145dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:background="#d9d9d9"
+            app:layout_constraintBottom_toTopOf="@id/signin_button"
+            app:layout_constraintHorizontal_bias="0.211"
+            app:layout_constraintStart_toEndOf="@id/or"
+            app:layout_constraintTop_toBottomOf="@+id/apple_login"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/or"
+            android:text="@string/or"
+            android:textColor="#5B5A5C"
+            android:textSize="16dp"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/apple_login"
+            app:layout_constraintBottom_toTopOf="@id/signin_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signin_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/signin_button"
+            android:elevation="8dp"
+            android:text="@string/sign_in_with_password"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="25dp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9c9d"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signin_button"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/sign_up">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="248dp"
+            android:fontFamily="@font/header"
+            android:text="Create Your Account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password"
+            android:layout_width="375dp"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input_fields"
+            android:hint="Password"
+            android:paddingStart="52dp"
+            android:textColorHint="#9e9e9e"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_input" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="15dp"
+            android:text="Remember me"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#d9d9d9"
+            app:layout_constraintStart_toEndOf="@id/continue_with"
+            app:layout_constraintTop_toBottomOf="@+id/signup"
+            app:layout_constraintBottom_toTopOf="@id/google_signup" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="66dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="152dp"
+            android:background="@drawable/shapes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signup_button"
+            android:elevation="8dp"
+            android:text="Sign up"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:textSize="15.5sp"
+            app:layout_constraintTop_toBottomOf="@+id/CheckBox"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="#d9d9d9"
+            app:layout_constraintEnd_toStartOf="@id/continue_with"
+            app:layout_constraintTop_toBottomOf="@+id/signup"
+            app:layout_constraintBottom_toTopOf="@id/google_signup"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/shapes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="79dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/shapes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_input"
+            android:layout_width="375dp"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/input_fields"
+            android:hint="Email"
+            android:paddingStart="52dp"
+            android:textColorHint="#9e9e9e"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/email"
+            app:layout_constraintTop_toTopOf="@id/email_input"
+            app:layout_constraintBottom_toBottomOf="@id/email_input"
+            app:layout_constraintStart_toStartOf="@id/email_input"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="21dp"
+            android:src="@drawable/locked"
+            app:layout_constraintTop_toTopOf="@id/password"
+            app:layout_constraintBottom_toBottomOf="@id/password"
+            app:layout_constraintStart_toStartOf="@id/password"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="340dp"
+            android:src="@drawable/eyeinvisiblefilled"
+            app:layout_constraintTop_toTopOf="@id/password"
+            app:layout_constraintBottom_toBottomOf="@id/password"
+            app:layout_constraintStart_toStartOf="@id/password"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/continue_with"
+            android:text="or continue with"
+            android:textColor="#5B5A5C"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/signup"
+            app:layout_constraintBottom_toTopOf="@id/google_signup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fc_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginBottom="115dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/google_signup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/facebook"
+            app:layout_constraintBottom_toBottomOf="@id/fc_signup"
+            app:layout_constraintTop_toTopOf="@id/fc_signup"
+            app:layout_constraintStart_toStartOf="@id/fc_signup"
+            app:layout_constraintEnd_toEndOf="@id/fc_signup"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginBottom="115dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/google"
+            app:layout_constraintBottom_toBottomOf="@id/google_signup"
+            app:layout_constraintTop_toTopOf="@id/google_signup"
+            app:layout_constraintStart_toStartOf="@id/google_signup"
+            app:layout_constraintEnd_toEndOf="@id/google_signup"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apple_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginBottom="115dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/google_signup" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/applefilled"
+            app:layout_constraintBottom_toBottomOf="@id/apple_signup"
+            app:layout_constraintTop_toTopOf="@id/apple_signup"
+            app:layout_constraintStart_toStartOf="@id/apple_signup"
+            app:layout_constraintEnd_toEndOf="@id/apple_signup"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9c9d"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/google_signup"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
