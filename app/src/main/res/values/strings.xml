@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="let_s_you_in">Let\'s you in</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_apple">Continue with Apple</string>
+    <string name="sign_in_with_password">Sign in with password</string>
+    <string name="or">or</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_add_user">go to add user</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="fullname">Fullname</string>
+    <string name="search_user">search user</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="go_to_user_search">go to user search</string>
+    <string name="add_user">add user</string>
+    <string name="emaill">Email</string>
+    <string name="all">All</string>
+    <string name="boots">Boots</string>
+    <string name="camping">🏕️ Camping</string>
+    <string name="partying">🎉 Partying</string>
+    <string name="jackets">Jackets</string>
+</resources>
