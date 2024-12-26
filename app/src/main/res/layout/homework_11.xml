@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/locations"
+        android:visibility="visible">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerViewL"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/add_address_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_address_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:text="Add New Address"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_location_container"
+        android:visibility="gone">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name_of_address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="18sp"
+            android:hint="enter name of address"
+            android:paddingHorizontal="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="18sp"
+            android:hint="enter name of city"
+            android:paddingHorizontal="15dp"
+            app:layout_constraintTop_toBottomOf="@id/name_of_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/street_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="18sp"
+            android:hint="enter name of the street"
+            android:paddingHorizontal="15dp"
+            app:layout_constraintTop_toBottomOf="@id/city"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/building"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="18sp"
+            android:hint="enter the number of the building"
+            android:paddingHorizontal="15dp"
+            app:layout_constraintTop_toBottomOf="@id/street_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="200dp"
+            android:text="Save Location"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
