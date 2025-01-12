@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#191B21">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/item_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/order_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape_for_imageview"
+            android:src="@drawable/boots1"
+            android:clipToOutline="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ordered_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/order_image"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/color_indicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/color_indicator_ordered_item"
+            app:layout_constraintBottom_toBottomOf="@id/color_of_item"
+            app:layout_constraintStart_toEndOf="@id/order_image"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/color_of_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Black  |  "
+            android:textColor="#E3E2E1"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toTopOf="@id/completed_button"
+            app:layout_constraintStart_toEndOf="@id/color_indicator"
+            app:layout_constraintTop_toBottomOf="@+id/ordered_item_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty = 3"
+            android:textSize="9sp"
+            android:textColor="#E3E2E1"
+            app:layout_constraintBottom_toTopOf="@id/completed_button"
+            app:layout_constraintStart_toEndOf="@id/color_of_item"
+            app:layout_constraintTop_toBottomOf="@+id/ordered_item_name"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/completed_button"
+            android:layout_width="70dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="12dp"
+            android:text="Completed"
+            android:textSize="8sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/completed_for_reveiw_button"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintBottom_toTopOf="@id/price_of_item"
+            app:layout_constraintTop_toBottomOf="@id/color_indicator"
+            app:layout_constraintStart_toEndOf="@id/order_image"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price_of_item"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="$280.00"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@id/order_image"
+            app:layout_constraintStart_toEndOf="@id/order_image"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:text="Leave Review"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/completed_for_reveiw_button"
+            app:layout_constraintBottom_toBottomOf="@id/order_image"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

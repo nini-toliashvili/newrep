@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentActive">
+
+    <fragment
+        android:id="@+id/fragmentActive"
+        android:name="com.example.myapplication.hwrk14.FragmentActive"
+        android:label="FragmentActive" >
+        <action
+            android:id="@+id/active_to_completed"
+            app:destination="@+id/fragmentCompleted"
+            app:enterAnim="@anim/swipe_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCompleted"
+        android:name="com.example.myapplication.hwrk14.FragmentCompleted"
+        android:label="completed_fragment">
+        <action android:id="@+id/completed_to_active"
+        app:destination="@id/fragmentActive"
+            app:enterAnim="@anim/swipe_left"/>
+
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/itemDetailsDialog"
+        android:name="com.example.myapplication.hwrk14.DialogFragment"
+        android:label="Item Details">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="quantity"
+            app:argType="integer" />
+        <argument
+            android:name="image"
+            app:argType="integer" />
+        <argument
+            android:name="colorHex"
+            app:argType="integer" />
+        <argument
+            android:name="price"
+            app:argType="float" />
+        <argument
+            android:name="colorName"
+            app:argType="string" />
+    </dialog>
+</navigation>
